@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3ad44216-bc25-4ef9-a8fe-c545cd281a29</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>C:\Program Files (x86)\Google\google_appengine\old_dev_appserver.py</StartupFile>
+    <SearchPath>C:\Program Files (x86)\Google\google_appengine;.</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Blog</Name>
+    <RootNamespace>Blog</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>--port=13090 .</CommandLineArguments>
+    <InterpreterPath>C:\Python27\python.exe</InterpreterPath>
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="blog.py" />
+    <Compile Include="lib\oauth2\clients\imap.py" />
+    <Compile Include="lib\oauth2\clients\smtp.py" />
+    <Compile Include="lib\oauth2\clients\__init__.py" />
+    <Compile Include="lib\oauth2\_version.py" />
+    <Compile Include="lib\oauth2\__init__.py" />
+    <Compile Include="lib\oauthlib\common.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\endpoints\access_token.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\endpoints\authorization.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\endpoints\base.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\endpoints\pre_configured.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\endpoints\request_token.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\endpoints\resource.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\endpoints\__init__.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\errors.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\parameters.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\request_validator.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\signature.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\utils.py" />
+    <Compile Include="lib\oauthlib\oauth1\rfc5849\__init__.py" />
+    <Compile Include="lib\oauthlib\oauth1\__init__.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\clients\backend_application.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\clients\base.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\clients\legacy_application.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\clients\mobile_application.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\clients\web_application.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\clients\__init__.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\endpoints\authorization.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\endpoints\base.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\endpoints\pre_configured.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\endpoints\resource.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\endpoints\token.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\endpoints\__init__.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\errors.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\grant_types\authorization_code.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\grant_types\base.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\grant_types\client_credentials.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\grant_types\implicit.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\grant_types\refresh_token.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\grant_types\resource_owner_password_credentials.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\grant_types\__init__.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\parameters.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\request_validator.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\tokens.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\utils.py" />
+    <Compile Include="lib\oauthlib\oauth2\rfc6749\__init__.py" />
+    <Compile Include="lib\oauthlib\oauth2\__init__.py" />
+    <Compile Include="lib\oauthlib\uri_validate.py" />
+    <Compile Include="lib\oauthlib\__init__.py" />
+    <Compile Include="lib\requests\adapters.py" />
+    <Compile Include="lib\requests\api.py" />
+    <Compile Include="lib\requests\auth.py" />
+    <Compile Include="lib\requests\certs.py" />
+    <Compile Include="lib\requests\compat.py" />
+    <Compile Include="lib\requests\cookies.py" />
+    <Compile Include="lib\requests\exceptions.py" />
+    <Compile Include="lib\requests\hooks.py" />
+    <Compile Include="lib\requests\models.py" />
+    <Compile Include="lib\requests\packages\chardet\big5freq.py" />
+    <Compile Include="lib\requests\packages\chardet\big5prober.py" />
+    <Compile Include="lib\requests\packages\chardet\chardetect.py" />
+    <Compile Include="lib\requests\packages\chardet\chardistribution.py" />
+    <Compile Include="lib\requests\packages\chardet\charsetgroupprober.py" />
+    <Compile Include="lib\requests\packages\chardet\charsetprober.py" />
+    <Compile Include="lib\requests\packages\chardet\codingstatemachine.py" />
+    <Compile Include="lib\requests\packages\chardet\compat.py" />
+    <Compile Include="lib\requests\packages\chardet\constants.py" />
+    <Compile Include="lib\requests\packages\chardet\cp949prober.py" />
+    <Compile Include="lib\requests\packages\chardet\escprober.py" />
+    <Compile Include="lib\requests\packages\chardet\escsm.py" />
+    <Compile Include="lib\requests\packages\chardet\eucjpprober.py" />
+    <Compile Include="lib\requests\packages\chardet\euckrfreq.py" />
+    <Compile Include="lib\requests\packages\chardet\euckrprober.py" />
+    <Compile Include="lib\requests\packages\chardet\euctwfreq.py" />
+    <Compile Include="lib\requests\packages\chardet\euctwprober.py" />
+    <Compile Include="lib\requests\packages\chardet\gb2312freq.py" />
+    <Compile Include="lib\requests\packages\chardet\gb2312prober.py" />
+    <Compile Include="lib\requests\packages\chardet\hebrewprober.py" />
+    <Compile Include="lib\requests\packages\chardet\jisfreq.py" />
+    <Compile Include="lib\requests\packages\chardet\jpcntx.py" />
+    <Compile Include="lib\requests\packages\chardet\langbulgarianmodel.py" />
+    <Compile Include="lib\requests\packages\chardet\langcyrillicmodel.py" />
+    <Compile Include="lib\requests\packages\chardet\langgreekmodel.py" />
+    <Compile Include="lib\requests\packages\chardet\langhebrewmodel.py" />
+    <Compile Include="lib\requests\packages\chardet\langhungarianmodel.py" />
+    <Compile Include="lib\requests\packages\chardet\langthaimodel.py" />
+    <Compile Include="lib\requests\packages\chardet\latin1prober.py" />
+    <Compile Include="lib\requests\packages\chardet\mbcharsetprober.py" />
+    <Compile Include="lib\requests\packages\chardet\mbcsgroupprober.py" />
+    <Compile Include="lib\requests\packages\chardet\mbcssm.py" />
+    <Compile Include="lib\requests\packages\chardet\sbcharsetprober.py" />
+    <Compile Include="lib\requests\packages\chardet\sbcsgroupprober.py" />
+    <Compile Include="lib\requests\packages\chardet\sjisprober.py" />
+    <Compile Include="lib\requests\packages\chardet\universaldetector.py" />
+    <Compile Include="lib\requests\packages\chardet\utf8prober.py" />
+    <Compile Include="lib\requests\packages\chardet\__init__.py" />
+    <Compile Include="lib\requests\packages\urllib3\connection.py" />
+    <Compile Include="lib\requests\packages\urllib3\connectionpool.py" />
+    <Compile Include="lib\requests\packages\urllib3\contrib\ntlmpool.py" />
+    <Compile Include="lib\requests\packages\urllib3\contrib\pyopenssl.py" />
+    <Compile Include="lib\requests\packages\urllib3\contrib\__init__.py" />
+    <Compile Include="lib\requests\packages\urllib3\exceptions.py" />
+    <Compile Include="lib\requests\packages\urllib3\fields.py" />
+    <Compile Include="lib\requests\packages\urllib3\filepost.py" />
+    <Compile Include="lib\requests\packages\urllib3\packages\ordered_dict.py" />
+    <Compile Include="lib\requests\packages\urllib3\packages\six.py" />
+    <Compile Include="lib\requests\packages\urllib3\packages\ssl_match_hostname\_implementation.py" />
+    <Compile Include="lib\requests\packages\urllib3\packages\ssl_match_hostname\__init__.py" />
+    <Compile Include="lib\requests\packages\urllib3\packages\__init__.py" />
+    <Compile Include="lib\requests\packages\urllib3\poolmanager.py" />
+    <Compile Include="lib\requests\packages\urllib3\request.py" />
+    <Compile Include="lib\requests\packages\urllib3\response.py" />
+    <Compile Include="lib\requests\packages\urllib3\util.py" />
+    <Compile Include="lib\requests\packages\urllib3\_collections.py" />
+    <Compile Include="lib\requests\packages\urllib3\__init__.py" />
+    <Compile Include="lib\requests\packages\__init__.py" />
+    <Compile Include="lib\requests\sessions.py" />
+    <Compile Include="lib\requests\status_codes.py" />
+    <Compile Include="lib\requests\structures.py" />
+    <Compile Include="lib\requests\utils.py" />
+    <Compile Include="lib\requests\__init__.py" />
+    <Compile Include="lib\requests_oauthlib\compliance_fixes\facebook.py" />
+    <Compile Include="lib\requests_oauthlib\compliance_fixes\linkedin.py" />
+    <Compile Include="lib\requests_oauthlib\compliance_fixes\__init__.py" />
+    <Compile Include="lib\requests_oauthlib\oauth1_auth.py" />
+    <Compile Include="lib\requests_oauthlib\oauth1_session.py" />
+    <Compile Include="lib\requests_oauthlib\oauth2_auth.py" />
+    <Compile Include="lib\requests_oauthlib\oauth2_session.py" />
+    <Compile Include="lib\requests_oauthlib\utils.py" />
+    <Compile Include="lib\requests_oauthlib\__init__.py" />
+    <Compile Include="lib\__init__.py" />
+    <Compile Include="main.py" />
+    <Compile Include="oAuth2Facebook.py" />
+    <Compile Include="oAuth2Google.py" />
+    <Compile Include="post.py" />
+    <Compile Include="rendering.py" />
+    <Compile Include="security.py" />
+    <Compile Include="tests\tests.py" />
+    <Compile Include="user.py" />
+    <Compile Include="tests\userProfileTests.py" />
+    <Compile Include="userProfile.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.yaml" />
+    <Content Include="index.yaml" />
+    <Content Include="lib\oauth2\clients\imap.pyc" />
+    <Content Include="lib\oauth2\clients\smtp.pyc" />
+    <Content Include="lib\oauth2\clients\__init__.pyc" />
+    <Content Include="lib\oauth2\_version.pyc" />
+    <Content Include="lib\oauth2\__init__.pyc" />
+    <Content Include="lib\oauthlib\common.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\endpoints\access_token.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\endpoints\authorization.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\endpoints\base.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\endpoints\pre_configured.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\endpoints\request_token.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\endpoints\resource.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\endpoints\__init__.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\errors.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\parameters.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\request_validator.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\signature.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\utils.pyc" />
+    <Content Include="lib\oauthlib\oauth1\rfc5849\__init__.pyc" />
+    <Content Include="lib\oauthlib\oauth1\__init__.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\clients\backend_application.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\clients\base.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\clients\legacy_application.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\clients\mobile_application.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\clients\web_application.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\clients\__init__.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\endpoints\authorization.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\endpoints\base.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\endpoints\pre_configured.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\endpoints\resource.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\endpoints\token.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\endpoints\__init__.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\errors.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\grant_types\authorization_code.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\grant_types\base.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\grant_types\client_credentials.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\grant_types\implicit.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\grant_types\refresh_token.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\grant_types\resource_owner_password_credentials.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\grant_types\__init__.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\parameters.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\request_validator.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\tokens.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\utils.pyc" />
+    <Content Include="lib\oauthlib\oauth2\rfc6749\__init__.pyc" />
+    <Content Include="lib\oauthlib\oauth2\__init__.pyc" />
+    <Content Include="lib\oauthlib\uri_validate.pyc" />
+    <Content Include="lib\oauthlib\__init__.pyc" />
+    <Content Include="lib\requests\adapters.pyc" />
+    <Content Include="lib\requests\api.pyc" />
+    <Content Include="lib\requests\auth.pyc" />
+    <Content Include="lib\requests\cacert.pem" />
+    <Content Include="lib\requests\certs.pyc" />
+    <Content Include="lib\requests\compat.pyc" />
+    <Content Include="lib\requests\cookies.pyc" />
+    <Content Include="lib\requests\exceptions.pyc" />
+    <Content Include="lib\requests\hooks.pyc" />
+    <Content Include="lib\requests\models.pyc" />
+    <Content Include="lib\requests\packages\chardet\big5freq.pyc" />
+    <Content Include="lib\requests\packages\chardet\big5prober.pyc" />
+    <Content Include="lib\requests\packages\chardet\chardetect.pyc" />
+    <Content Include="lib\requests\packages\chardet\chardistribution.pyc" />
+    <Content Include="lib\requests\packages\chardet\charsetgroupprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\charsetprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\codingstatemachine.pyc" />
+    <Content Include="lib\requests\packages\chardet\compat.pyc" />
+    <Content Include="lib\requests\packages\chardet\constants.pyc" />
+    <Content Include="lib\requests\packages\chardet\cp949prober.pyc" />
+    <Content Include="lib\requests\packages\chardet\escprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\escsm.pyc" />
+    <Content Include="lib\requests\packages\chardet\eucjpprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\euckrfreq.pyc" />
+    <Content Include="lib\requests\packages\chardet\euckrprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\euctwfreq.pyc" />
+    <Content Include="lib\requests\packages\chardet\euctwprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\gb2312freq.pyc" />
+    <Content Include="lib\requests\packages\chardet\gb2312prober.pyc" />
+    <Content Include="lib\requests\packages\chardet\hebrewprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\jisfreq.pyc" />
+    <Content Include="lib\requests\packages\chardet\jpcntx.pyc" />
+    <Content Include="lib\requests\packages\chardet\langbulgarianmodel.pyc" />
+    <Content Include="lib\requests\packages\chardet\langcyrillicmodel.pyc" />
+    <Content Include="lib\requests\packages\chardet\langgreekmodel.pyc" />
+    <Content Include="lib\requests\packages\chardet\langhebrewmodel.pyc" />
+    <Content Include="lib\requests\packages\chardet\langhungarianmodel.pyc" />
+    <Content Include="lib\requests\packages\chardet\langthaimodel.pyc" />
+    <Content Include="lib\requests\packages\chardet\latin1prober.pyc" />
+    <Content Include="lib\requests\packages\chardet\mbcharsetprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\mbcsgroupprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\mbcssm.pyc" />
+    <Content Include="lib\requests\packages\chardet\sbcharsetprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\sbcsgroupprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\sjisprober.pyc" />
+    <Content Include="lib\requests\packages\chardet\universaldetector.pyc" />
+    <Content Include="lib\requests\packages\chardet\utf8prober.pyc" />
+    <Content Include="lib\requests\packages\chardet\__init__.pyc" />
+    <Content Include="lib\requests\packages\urllib3\connection.pyc" />
+    <Content Include="lib\requests\packages\urllib3\connectionpool.pyc" />
+    <Content Include="lib\requests\packages\urllib3\contrib\ntlmpool.pyc" />
+    <Content Include="lib\requests\packages\urllib3\contrib\pyopenssl.pyc" />
+    <Content Include="lib\requests\packages\urllib3\contrib\__init__.pyc" />
+    <Content Include="lib\requests\packages\urllib3\exceptions.pyc" />
+    <Content Include="lib\requests\packages\urllib3\fields.pyc" />
+    <Content Include="lib\requests\packages\urllib3\filepost.pyc" />
+    <Content Include="lib\requests\packages\urllib3\packages\ordered_dict.pyc" />
+    <Content Include="lib\requests\packages\urllib3\packages\six.pyc" />
+    <Content Include="lib\requests\packages\urllib3\packages\ssl_match_hostname\_implementation.pyc" />
+    <Content Include="lib\requests\packages\urllib3\packages\ssl_match_hostname\__init__.pyc" />
+    <Content Include="lib\requests\packages\urllib3\packages\__init__.pyc" />
+    <Content Include="lib\requests\packages\urllib3\poolmanager.pyc" />
+    <Content Include="lib\requests\packages\urllib3\request.pyc" />
+    <Content Include="lib\requests\packages\urllib3\response.pyc" />
+    <Content Include="lib\requests\packages\urllib3\util.pyc" />
+    <Content Include="lib\requests\packages\urllib3\_collections.pyc" />
+    <Content Include="lib\requests\packages\urllib3\__init__.pyc" />
+    <Content Include="lib\requests\packages\__init__.pyc" />
+    <Content Include="lib\requests\sessions.pyc" />
+    <Content Include="lib\requests\status_codes.pyc" />
+    <Content Include="lib\requests\structures.pyc" />
+    <Content Include="lib\requests\utils.pyc" />
+    <Content Include="lib\requests\__init__.pyc" />
+    <Content Include="lib\requests_oauthlib\compliance_fixes\facebook.pyc" />
+    <Content Include="lib\requests_oauthlib\compliance_fixes\linkedin.pyc" />
+    <Content Include="lib\requests_oauthlib\compliance_fixes\__init__.pyc" />
+    <Content Include="lib\requests_oauthlib\oauth1_auth.pyc" />
+    <Content Include="lib\requests_oauthlib\oauth1_session.pyc" />
+    <Content Include="lib\requests_oauthlib\oauth2_auth.pyc" />
+    <Content Include="lib\requests_oauthlib\oauth2_session.pyc" />
+    <Content Include="lib\requests_oauthlib\utils.pyc" />
+    <Content Include="lib\requests_oauthlib\__init__.pyc" />
+    <Content Include="README.txt" />
+    <Content Include="static\main.css" />
+    <Content Include="templates\base.html" />
+    <Content Include="templates\front.html" />
+    <Content Include="templates\newpost.html" />
+    <Content Include="templates\permalink.html" />
+    <Content Include="templates\post.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+    <Folder Include="lib\oauth2\" />
+    <Folder Include="lib\oauth2\clients\" />
+    <Folder Include="lib\oauthlib\" />
+    <Folder Include="lib\oauthlib\oauth1\" />
+    <Folder Include="lib\oauthlib\oauth1\rfc5849\" />
+    <Folder Include="lib\oauthlib\oauth1\rfc5849\endpoints\" />
+    <Folder Include="lib\oauthlib\oauth2\" />
+    <Folder Include="lib\oauthlib\oauth2\rfc6749\" />
+    <Folder Include="lib\oauthlib\oauth2\rfc6749\clients\" />
+    <Folder Include="lib\oauthlib\oauth2\rfc6749\endpoints\" />
+    <Folder Include="lib\oauthlib\oauth2\rfc6749\grant_types\" />
+    <Folder Include="lib\requests\" />
+    <Folder Include="lib\requests\packages\" />
+    <Folder Include="lib\requests\packages\chardet\" />
+    <Folder Include="lib\requests\packages\urllib3\" />
+    <Folder Include="lib\requests\packages\urllib3\contrib\" />
+    <Folder Include="lib\requests\packages\urllib3\packages\" />
+    <Folder Include="lib\requests\packages\urllib3\packages\ssl_match_hostname\" />
+    <Folder Include="lib\requests_oauthlib\" />
+    <Folder Include="lib\requests_oauthlib\compliance_fixes\" />
+    <Folder Include="tests\" />
+    <Folder Include="templates\" />
+    <Folder Include="static\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
